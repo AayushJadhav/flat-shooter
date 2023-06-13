@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+}
+
+#game-menu,
+#endgame-area {
+    width: 100vw;
+    height: 100vh;
+    background-color: #eeeeee;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#game-menu h1 {
+    font-size: 8vw;
+    margin-bottom: 80px;
+}
+
+#start-btn {
+    margin-top: 10px;
+    font-size: 100%;
+    width: 8vw;
+    height: 8vh;
+    border: 1px solid #111111;
+    background-color: #eeeeee;
+    color: #111111;
+}
+
+#start-btn:hover {
+    animation: color-anim .4s forwards;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#endgame-area h1 {
+    font-size: 8vw;
+    margin-bottom: 80px;
+}
+
+@keyframes color-anim {
+    from {
+        border: 1px solid #111111;
+        background-color: #eeeeee;
+        color: #111111;
+    }
+
+    to {
+        border: 1px solid #eeeeee;
+        background-color: #111111;
+        color: #eeeeee;
+    }
+}
